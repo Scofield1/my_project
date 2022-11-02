@@ -37,7 +37,7 @@ def contact_me(request):
             [settings.EMAIL_HOST_USER, email])
         email.content_subtype = 'html'
         email.send()
-        messages.success(request, 'Message Sent Succesfully')
+        messages.success(request, 'Message Sent Succesfully!')
         return redirect('/')
 
 
